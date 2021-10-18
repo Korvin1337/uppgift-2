@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("../img/mountains.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(40, 154, 255);
+}
+
+a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: underline;
+}
+
+p {
+  color: hsl(0, 0%, 0%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'nav-img nav-img nav-link nav-link nav-link'
+    'body-img body-img body-img body-header body-header'
+    'body-img body-img body-img body-text body-text'
+    'body-img body-img body-img body-text body-text'
+    'body-img body-img body-img body-text body-text'
+    'body-img body-img body-img body-text body-text'
+    'body-img body-img body-img body-btn body-btn';
+  grid-gap: 0.3125rem;
+  color: hsl(0, 0%, 100%);
+  padding: 1% 1%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.nav-img {
+  grid-area: nav-img;
+  padding: 1% 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(209, 210, 0);
+}
+
+.nav-link {
+  grid-area: nav-link;
+  padding: 1% 2%;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.nav-link a {
+  background: rgb(0, 92, 40);
+  color: rgb(126, 126, 126);
+  width: 34%;
+  padding-left: 10%;
+}
+
+.body-img {
+  grid-area: body-img;
+  padding: 1% 1%;
+  background-color: rgb(209, 210, 0);
+}
+
+.body-header {
+  grid-area: body-header;
+  padding: 1% 1%;
+  background-color: rgba(0, 146, 255, 0.4);
+  text-align: center;
+}
+
+.body-text {
+  grid-area: body-text;
+  padding: 1% 1%;
+  background-color: rgba(12, 145, 168, 0.4);
+}
+
+.body-btn {
+  grid-area: body-btn;
+  padding: 1% 1%;
+  background-color: rgba(255, 0, 93, 0.4);
+  display: grid;
+}
+
+.body-btn-style {
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  align-self: center;
+  justify-self: center;
+  width: 20%;
+}
+
+@media (max-width: 980px) {
+  body {
+    background-image: url("../img/tablet_mountains.jpg");
+  }
+  @media (max-width 768px) {
+    body {
+      background-image: url("../img/mobile_mountains.jpg");
+    }
+  }
+
+  p {
+      font-size: 1.125rem;
+      color: hsl(0, 0%, 100%);
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .grid-container {
+    max-width: auto;
+    min-width: auto;
+    display: grid;
+    grid-template-areas:
+      'nav-img nav-img nav-img nav-img nav-img'
+      'nav-link nav-link nav-link nav-link nav-link'
+      'body-img body-img body-img body-img body-img'
+      'body-header body-header body-header body-header body-header'
+      'body-text body-text body-text body-text body-text'
+      'body-btn body-btn body-btn body-btn body-btn';
+    grid-gap: 0.3125rem;
+    color: hsl(0, 0%, 100%);
+    padding: 1% 1%;
+    }
+
+    .nav-img {
+      grid-area: nav-img;
+      padding: 1% 1%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-link {
+      grid-area: nav-link;
+      padding: 1% 2%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-link a {
+      background-color: rgba(0, 0, 0, 0);
+      color: hsl(0, 0%, 100%);
+      width: 34%;
+      padding-left: 10%;
+    }
+
+    .body-img {
+      grid-area: body-img;
+      padding: 1% 1%;
+      background-color: rgba(0, 0, 0, 0.4);
+      width: 50;
+    }
+
+    .body-header {
+      grid-area: body-header;
+      padding: 1% 1%;
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    .body-text {
+      grid-area: body-text;
+      padding: 1% 1% 0% 2%;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .body-btn {
+      grid-area: body-btn;
+      padding: 1% 1%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: grid;
+    }
+
+    .body-btn-style {
+      border-radius: 50%;
+      background-color: rgb(255, 0, 0);
+      align-self: center;
+      justify-self: center;
+    }
+  }

@@ -1,0 +1,33 @@
+html {
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+h2 {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.grid-container {
+  font-style: "Heebo", sans-serif;
+}
+
+.body-header {
+  font-style: "Oswald", sans-serif;
+}
+
+@media (min-width: 40em) {
+  p {
+      font-size: 1.125rem;
+      color: hsl(0, 0%, 100%);
+  }
+
+  h2 {
+    font-size: 3rem;
+    color: hsl(0, 0%, 100%);
+  }
+}
