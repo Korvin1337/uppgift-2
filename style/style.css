@@ -101,6 +101,7 @@ img {
   align-self: center;
   justify-self: center;
   width: 20%;
+  height: 50%;
 }
 
 @media (max-width: 980px) {
@@ -195,5 +196,6 @@ img {
       background-color: rgb(255, 0, 0);
       align-self: center;
       justify-self: center;
+      height: 100%;
     }
   }
